@@ -1,0 +1,32 @@
+package com.perscholas.java_basics.arraypractice;
+
+public class ArrayClonePractice {
+
+	public static void main(String[] args) {
+		String[] array = {"red","green","blue","yellow"};
+		System.out.println(array.length);
+		String[] cloneArray;
+		cloneArray = array.clone();
+		String s = cloneArray.toString();
+		String arrayCopy= array.toString();
+	
+		if(arrayCopy == s)
+		{
+			System.out.println("Cloning is done successfully");
+		}
+		System.out.println(array.getClass());
+		System.out.println(cloneArray.getClass());
+		if(array.getClass()==cloneArray.getClass()) {
+			System.out.println("clone worked");
+		}
+		
+		for(int j=0;j<array.length;j++) {
+			System.out.print(array[j]+" ");
+		}
+		System.out.println();
+		for(int i=0;i<cloneArray.length;i++) {
+			System.out.print(cloneArray[i]+" ");
+		}
+	}
+
+}
