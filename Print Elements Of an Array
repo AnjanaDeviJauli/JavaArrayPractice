@@ -1,0 +1,13 @@
+package com.perscholas.java_basics.arraypractice;
+
+public class PrintArrayElements {
+
+	public static void main(String[] args) {
+		int[] num = {1,2,3};
+		for(int value:num)
+		{
+			System.out.print(value+" ");
+		}
+	}
+
+}
