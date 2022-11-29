@@ -1,0 +1,12 @@
+package com.perscholas.java_basics.arraypractice;
+
+public class GetTheMiddleElementOfArray {
+
+	public static void main(String[] args) {
+		int[] array = {13, 5, 7, 68, 2};
+		int mid;
+		mid=array.length/2;
+		System.out.println(array[mid]);
+	}
+
+}
